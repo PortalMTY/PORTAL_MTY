@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <h1 class="titulo titulo--interlineado">Aviso <br><span class="titulo__span">Información importante para continuar <br> con el proceso de facturación.</span></h1>
+        <section class="texto texto--aviso">
+            <ol class="lista">
+                <li class="lista__elemento">Recuerda tener tu constancia fiscal a mano.</li>
+                <li class="lista__elemento">Debes registrar tus datos tal y como se presentan en tu constancia de situación fiscal (respetando las mayúsculas).</li>
+                <li class="lista__elemento">Debes de validar que el nombre o razón social del receptor coincida con el registrado ante el SAT, de la misma manera se validara que el domicilio fiscal (código postal) del receptor, sea el correcto.</li>
+                <li class="lista__elemento">El caso de personas morales, se deberá omitir el régimen de capital, por ejemplo, el nombre ‘FERRETERIA LA TUERCA SA DE CV’, se deberá registrar como ‘FERRETERIA LA TUERCA’. </li>
+            </ol>
+            <p class="centrar">Si no tienes tu constancia puedes <a target="_blank" href="https://www.sat.gob.mx/aplicacion/login/43824/reimprime-tus-acuses-del-rfc" class="acentuacion">consultarla aquí</a></p>
+        </section>
+        <div class="centrar">
+            <a href="verificacion_datos_contribuyente.html" class="boton">Siguiente</a>
+        </div>
+    </main>
+    <br><br>
+</body>
+</html>

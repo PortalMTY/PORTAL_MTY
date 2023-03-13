@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Proceso</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="informacion" id="modal">
+            <div class="popup">
+                <div class="informacion__texto">
+                    <p>El archivo XML corresponde a su factura electrónica. El archivo PDF corresponde a la representación impresa de su factura electrónica.Si tiene problemas para visualizar su PDF le recomendamos descargar la última versión de ADOBE Reader <a class="acentuacion" href="#">aquí</a>. <br> Si tiene problemas para visualizar su PDF le recomendamos descargar la última versión de Internet Explorer <a class="acentuacion" href="#">aquí</a>. <br> Para visualizar su XML dé click en "obtener XML". Podrá guardarlo a su disco con la extensión TXT y abrirlo posteriormente con el Notepad o Block de notas. <br> Le recomendamos conservar su documento de pago y/o comprobante de pago, ya que para recuperar una factura ya elaborada y/o el archivo XML, es necesario ingresar el código de facturación, la fecha de pago y el RFC al que se facturó.</p>
+                </div>
+                <a href="#" class="cerrar">X</a>
+            </div>
+        </div>
+        <section class="progreso">
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 1</p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 2</p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 3</p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 4</p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 5</p>
+                <div class="progreso__circulo progreso__circulo--actual">
+                </div>
+            </div>
+        </section>
+        <section class="contenedor--datos centrar">
+                <div>
+                    <h1 class="titulo">Emisión de Factura</h1>
+                    <h2 class="subtitulo">Paso 5: Descargue o envíe su documento por correo electronico.</h2>
+                    <p class="texto texto--pasos texto--finalizar">Da click para descargarlo <a href="#modal"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+                        <line x1="12" y1="19" x2="12" y2="19.01" />
+                      </svg></a></p>
+                    <a href="#"><img class="icono" src="src/img/icono_pdf.png" alt="Icono pdf"></a>
+                    <a href="#"><img class="icono" src="src/img/icono_xls.png" alt="Icono xml"></a>
+                    <p class="texto texto--pasos texto--finalizar">Enviar por correo:</p>
+                    <input type="text" class="select" placeholder="Ingresa tu correo">
+                    <br><br><br>
+                    <a class="boton boton--verde" href="verificacion_datos_contribuyente.html">Generar Nueva Factura</a>
+                </div> 
+        </section>
+        
+    </main>
+    
+    <br><br>
+</body>
+</html>

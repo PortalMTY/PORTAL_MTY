@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de datos</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+  </head>
+
+</head>
+<body>
+    <div class="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="progreso">
+            <div class="progreso__elemento">
+                <p class="progreso__texto"><a class="txtNone" href="verificacion_datos_contribuyente.html">Paso 1</a></p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto"><a class="txtNone" href="modo_pago.html">Paso 2</a></p>
+                <div class="progreso__circulo progreso__circulo--actual progreso__circulo--completado">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 3</p>
+                <div class="progreso__circulo progreso__circulo--actual">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 4</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto">Paso 5</p>
+                <div class="progreso__circulo">
+                </div>
+            </div>
+        </section>
+        <section class="contenedor">
+            <div class="grid">
+                <div>
+                    <h1 class="titulo titulo--cuerpo">Emisión de Factura</h1>
+                    <h2 class="subtitulo">Paso 3: Para generar su factura requiere ingresar los datos impresos en su ticket.</h2>
+                    <form action="javascript:obtener_localstorage()">
+                        <p class="texto texto--formulario">1.) Fecha de pago (DD/MM/AA):</p>
+                        <div class=" grid--3">
+                            <select class="select select--captura" required>
+                                <Option disabled selected value="">DD</Option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="2">03</option>
+                                <option value="2">04</option>
+                                <option value="2">05</option>
+                                <option value="2">06</option>
+                                <option value="2">07</option>
+                                <option value="2">08</option>
+                                <option value="2">09</option>
+                                <option value="2">10</option>
+                                <option value="2">11</option>
+                                <option value="2">12</option>
+                                <option value="2">13</option>
+                                <option value="2">14</option>
+                                <option value="2">15</option>
+                                <option value="2">16</option>
+                                <option value="2">17</option>
+                                <option value="2">18</option>
+                                <option value="2">19</option>
+                                <option value="2">20</option>
+                                <option value="2">21</option>
+                                <option value="2">22</option>
+                                <option value="2">23</option>
+                                <option value="2">24</option>
+                                <option value="2">25</option>
+                                <option value="2">26</option>
+                                <option value="2">27</option>
+                                <option value="2">28</option>
+                                <option value="2">29</option>
+                                <option value="2">30</option>
+                                <option value="2">31</option>
+                            </select>
+                            <select class="select select--captura" required>
+                                <Option disabled selected value="">MM</Option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select class="select select--captura" required>
+                                <option value="1">2023</option>
+                            </select>
+                        </div>
+                        <p class="texto texto--formulario">2.) Importe Total:</p>
+                        <input type="text" class="select select--datos" placeholder="Ingresa el monto de la factura..." required>
+                        <p class="texto texto--formulario">3.) No. de Referencia</p>
+                        <input type="text" class="select select--datos" placeholder="Ingresa el No. de Referencia..." required>
+                        <br><br><br>
+                        <p class="texto texto--importante">*Incluir los datos tal y cual aparecen en la referencia.</p>
+                        <div class="centrar"><input type="submit" class="boton" value="Siguiente"></div>
+                    </form>
+                </div>
+                <div class="centrar">
+                    <img class="imagen imagen--heigt" src="src/img/Comprobante_01.png" alt="Ejemplo">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <br><br>
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>

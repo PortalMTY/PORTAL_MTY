@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="contenedor">
+            <h1 class="boton boton--preguntas"> Preguntas frecuentes</h1>
+
+            <div class="ayuda">
+                <section class="seccion" id="menu1">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu1">1.¿Existen validadores de CFDI versión 4.0?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">El validador de forma y sintaxis de los CFDI que estaba disponible en el Portal del SAT, dejó de dar servicio en mayo del 2017, toda vez que se considera que un CFDI certificado cumple con las especificaciones técnicas de estructura establecidas en el Anexo 20. Si existe la necesidad de realizar las validaciones de forma y sintaxis a un comprobante.</p>
+                    <a class="seccion__enlace" target="_blank" href="https://verificacfdi.facturaelectronica.sat.gob.mx/">Verificación de Comprobantes Fiscales Digitales por Internet (sat.gob.mx)</a>
+                </section>
+                <section class="seccion" id="menu2">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu2">2.¿Que código postal se debe registrar en el CFDI cuando éste no se encuentre en el Catálogo de código postal del Anexo 20?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">En caso de que dentro del catalogo c_CodigoPostal, no se encuentre contenida información del código postal, se debe registrar la clave del código postal mas cercano del lugar de expedición del comprobante fiscal. Fundamento Legal: Articulo 29-A del Código Fiscal de la Federación y “Anexo 20 Guía de llenado de los comprobantes fiscales digitales por Internet” versión 4.0, publicada en el Portal del SAT.</p>
+                </section>
+                <section class="seccion" id="menu3">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu3">3.¿Las facturas se pueden pagar con bienes o servicios?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">No, no existe en el catálogo la forma de pago en especie o servicios, derivado de que la persona que pretende pagar con bienes está realizando la enajenación de un bien, por lo tanto, debe emitir un CFDI de ingresos por ese bien que está enajenando, por otra parte, si la persona que pretende pagar lo realiza con la prestación de un servicio, debe emitir un CFDI por dicho servicio. Tanto en el caso de la enajenación de bienes, como en la prestación de servicios se considera que el cliente y el proveedor son el mismo contribuyente, por lo tanto, se puede aplicar la forma de pago “17” (Compensación). Fundamento legal: Artículo 14 del Código Fiscal de la Federación.</p>
+                </section>
+                <section class="seccion" id="menu4">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu4">4.¿Cuando puedo solicitar mis facturas?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">Durante el año en curso, en caso de requerir años anteriores enviar un correo a: soporte.facturacion@monterrey.gob.mx</p>
+                </section>
+                <section class="seccion" id="menu5">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu5">5.¿Como puedo consultar mi constancia?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">Si no tienes tu constancia puedes <a target="_blank" href="https://www.sat.gob.mx/aplicacion/login/43824/reimprime-tus-acuses-del-rfc" class="txtColor">consultarla aquí</a></p>
+                </section>
+                <section class="seccion" id="menu6">
+                    <div class="flex evenly">
+                        <a class="seccion__selector" href="#menu6">6.¿Que datos lleno si soy persona física/moral?</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus mostrar" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#47B4E5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                    <p class="seccion__texto">Si soy persona física: <br><p class="seccion__texto centrar"><img class="imagen--pregunta" src="src/img/Fisica.png" alt="Imagen de Referencia para Persona Fisica"></p> <br> <p class="seccion__texto">Si soy persona moral:</p> <br> <p class="seccion__texto centrar"><img src="src/img/Moral.png" alt="Imagen de Referencia para Persona Moral" class="imagen--pregunta"></p>
+                    </p>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    <br><br>
+</body>
+</html>

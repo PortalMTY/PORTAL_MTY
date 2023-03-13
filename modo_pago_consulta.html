@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo de Pago</title>
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <link rel="preload" href="src/css/normalize.css" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+  </head>
+
+</head>
+<body>
+    <div class="sombra" id="sombra">
+        <nav class="navegacion">
+            <div>
+                <a href="index.html"><img class="logo" src="src/img/gobierno_de_monterrey_logo.png" alt="Logotipo"></a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="aviso.html">Facturas</a>
+                <a class="navegacion__enlace" href="modo_pago_consulta.html">Consulta Facturas</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </div>
+            <div class="navegacion__elemento">
+                <a class="boton boton--mayus" href="ayuda.html">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="progreso">
+            <div class="progreso__elemento">
+                <p class="progreso__texto"><a class="txtNone" href="verificacion_datos_contribuyente.html">Paso 1</a></p>
+                <div class="progreso__circulo progreso__circulo--2pasos progreso__circulo--actual">
+                </div>
+            </div>
+            <div class="progreso__elemento">
+                <p class="progreso__texto"><a class="txtNone" href="modo_pago.html">Paso 2</a></p>
+                <div class="progreso__circulo progreso__circulo--2pasos">
+                </div>
+            </div>
+        </section>
+        <h1 class="titulo">Consulta de Factura</h1>
+        <h2 class="subtitulo centrar">Para consultar su factura requiere los datos impresos en su ticket y el RFC al que facturó</h2>
+                <div class="centrar">
+                    <label class="texto">Pago realizado en:</label>
+                    <form name="formularioPago" action="#">
+                        <select class="select" name="modo" size="6" onchange="manda_consulta()">
+                            <option value="1">Caja municipio</option>
+                            <option value="2">En linea o pagina de municipio</option>
+                            <option value="3">OXXO</option>
+                            <option value="4">Banorte</option>
+                            <option value="5">Banregio</option>
+                            <option value="6">Afirme</option>
+                        </select>
+                    </form>
+                    <br><br>
+        </section>
+    </main>
+    <br><br>
+<script src="src/scripts/script.js"></script>
+</body>
+</html>
